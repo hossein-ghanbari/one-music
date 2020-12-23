@@ -1,0 +1,270 @@
+.playerBox {
+  /* height: 80px; */
+  background-color: #2e2c5b;
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 35px 15px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+.rp {
+  display: none;
+}
+.playerDet {
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 0;
+  width: 180px;
+}
+.trackImg {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 2px solid #8f8ea9;
+  background-color: #fff;
+}
+.trackDet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 10px;
+}
+.trackText {
+  display: block;
+  margin: 0;
+  font-size: 10px;
+  font-weight: 500;
+  color: #8f8ea9;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100px;
+}
+.trackText:nth-child(1) {
+  font-size: 14px;
+  color: #fff;
+}
+.trackText.empty {
+  width: 80px;
+  height: 6px;
+  background-color: #f6f6f6bb;
+  border-radius: 2px;
+}
+.trackText.empty:nth-child(2) {
+  height: 4px;
+  width: 50px;
+  margin: 5px 0 0 0;
+  background-color: #8f8ea9;
+}
+.controlBtns {
+  display: flex;
+  align-items: center;
+}
+.btnPlay {
+  /* width: 45px; */
+  /* height: 45px; */
+  margin: 0 10px 0 0;
+}
+.btnPlay i {
+  color: #fff;
+  font-size: 32px;
+  display: block;
+}
+.btnPlay.pauseIcon i {
+  font-size: 30px;
+  width: 32px;
+}
+.btnStop {
+  margin: 0 10px 0 0;
+}
+.btnStop i {
+  color: #fff;
+  font-size: 30px;
+  display: block;
+}
+.playerTime {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+.timeText {
+  font-size: 11px;
+  font-weight: 500;
+  color: #fff;
+  width: 35px;
+  text-align: center;
+}
+.timeSeek {
+  width: calc(100% - 90px);
+  margin: 0 10px;
+}
+.playerVolume {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.volumeSeek {
+}
+.optBtns {
+  display: flex;
+  align-items: center;
+}
+.btnMute {
+}
+.btnMute i {
+  color: #8f8ea9;
+  font-size: 20px;
+  display: block;
+}
+.btnMute.active i {
+  color: #fff;
+}
+.btnRep {
+  margin: 0 10px 0 0;
+}
+.btnRep i {
+  color: #8f8ea9;
+  font-size: 20px;
+  display: block;
+}
+.btnRep.active i {
+  color: #fff;
+}
+.btnDownload {
+  margin: 0 30px 0 0;
+}
+.btnDownload i {
+  color: #8f8ea9;
+  font-size: 18px;
+  display: block;
+}
+.btnSpeed {
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8ea9;
+  margin: 0 10px 0 0;
+}
+.btnSpeed.active {
+  color: #fff;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background-color: #2e2c5b;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #ffffff;
+  /* border-radius: 50px; */
+  border: 6px solid #2e2c5b;
+}
+input[type="range"]::-webkit-slider-thumb {
+  border: 3px solid #2e2c5b;
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.1px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 14px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #ffffff;
+  /* border-radius: 50px; */
+  border: 6px solid #2e2c5b;
+  box-sizing: border-box;
+}
+input[type="range"]::-moz-range-thumb {
+  border: 3px solid #2e2c5b;
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #ffffff;
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #ffffff;
+  border: 0px solid #000000;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  border: 3px solid #2e2c5b;
+  height: 16px;
+  width: 16px;
+  border-radius: 50px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #ffffff;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #ffffff;
+}
+@media screen and (max-width: 992px) {
+  .playerDet {
+    width: unset;
+    padding: 0;
+  }
+  .trackText {
+    width: 75px;
+    font-size: 10px !important;
+  }
+  .btnStop,
+  .btnSpeed,
+  .volumeSeek {
+    display: none;
+  }
+  .btnPlay {
+    margin: 0;
+  }
+  .btnRep {
+    margin: 0 15px 0 0;
+  }
+  .btnDownload {
+    margin: 0;
+  }
+}
+

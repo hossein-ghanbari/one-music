@@ -1,0 +1,24 @@
+.row {
+  margin: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #fd2d55;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0;
+  margin: 0 5px;
+  box-shadow: 0 1px 4px 0 #fd2d55;
+}
+.item.active {
+  background-color: #2e2c5b;
+  box-shadow: 0 1px 4px 0 #2e2c5b;
+}

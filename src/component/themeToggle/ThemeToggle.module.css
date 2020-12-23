@@ -1,0 +1,20 @@
+.themeToggleBtn {
+  width: 45px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+  margin: 0 auto 0 210px;
+  display: block;
+  transition: all 0.3s;
+}
+.themeToggleBtn.dark {
+  background-color: #484848;
+}
+@media screen and (max-width: 992px) {
+  .themeToggleBtn {
+    width: 40px;
+    margin: 0 auto 0 10px;
+  }
+}

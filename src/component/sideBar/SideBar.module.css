@@ -1,0 +1,37 @@
+.SideBarBox {
+  background-color: #f6f6f6;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  width: 250px;
+  transition: all 0.3s;
+  z-index: 999;
+}
+.SideBarBox.show {
+  left: 0;
+}
+.SideBarBox.hide {
+  left: -250px;
+}
+.sideTrigger {
+  font-size: 40px;
+  color: #484848;
+  cursor: pointer;
+  z-index: 998;
+}
+.sideOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s;
+  z-index: 997;
+}
+.sideOverlay.show {
+  width: 100vw;
+  height: 120vh;
+  opacity: 1;
+}
