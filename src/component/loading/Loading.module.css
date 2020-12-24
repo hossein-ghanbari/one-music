@@ -1,10 +1,12 @@
+@value color-white,color-darkMode from "../../utility/colors.css";
+
 .loading {
   position: fixed;
   left: 250px;
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: color-white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,5 +52,5 @@
 
 /* dark mode */
 :global(.dark) .loading {
-  background-color: #1f1f1f;
+  background-color: color-darkMode;
 }

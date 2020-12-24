@@ -1,9 +1,11 @@
+@value color-primary,color-primaryLighten,color-darkLighten from "../../../utility/colors.css";
+
 .logoContainer {
   /* width: 180px;
   height: 60px;
   margin: 30px auto 0 auto; */
   padding: 25px 0 20px 0;
-  border-bottom: 2px solid #fd2d55;
+  border-bottom: 2px solid color-primary;
 }
 .logo {
   width: 180px;
@@ -20,7 +22,7 @@
 .menu li a {
   font-size: 14px;
   font-weight: 500;
-  color: #8f8ea9;
+  color: color-darkLighten;
   display: flex;
   align-items: center;
   padding: 10px 0 10px 30px;
@@ -29,9 +31,9 @@
 }
 .menu li a:hover,
 .menu li a.active {
-  color: #fd2d55;
-  border-color: #fd2d55;
-  background-color: #fd2d5508;
+  color: color-primary;
+  border-color: color-primary;
+  background-color: color-primaryLighten;
 }
 .menu li a i {
   font-size: 22px;
@@ -39,6 +41,6 @@
   text-align: center;
   margin: 0 10px 0 0;
 }
-.menu li:nth-last-child(1) a i{
+.menu li:nth-last-child(1) a i {
   font-size: 20px;
 }

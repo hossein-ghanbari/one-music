@@ -1,5 +1,7 @@
+@value color-lightLighten,color-dark,color-blackLighten from "../../utility/colors.css";
+
 .SideBarBox {
-  background-color: #f6f6f6;
+  background-color: color-lightLighten;
   position: fixed;
   bottom: 0;
   top: 0;
@@ -15,7 +17,7 @@
 }
 .sideTrigger {
   font-size: 40px;
-  color: #484848;
+  color: color-dark;
   cursor: pointer;
   z-index: 998;
 }
@@ -26,7 +28,7 @@
   width: 0;
   height: 0;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: color-blackLighten;
   transition: opacity 0.3s;
   z-index: 997;
 }

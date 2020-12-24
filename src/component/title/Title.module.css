@@ -1,7 +1,9 @@
+@value color-white,color-dark from "../../utility/colors.css";
+
 .title {
   font-size: 20px;
   font-weight: 600;
-  color: #484848;
+  color: color-dark;
   margin: 0;
   padding: 20px 0;
   transition: all 0.3s;
@@ -15,5 +17,5 @@
 
 /* dark mode */
 :global(.dark) .title {
-  color: #fff;
+  color: color-white;
 }

@@ -1,3 +1,5 @@
+@value color-white,color-primary,color-secendry from "../../utility/colors.css";
+
 .row {
   margin: 0 0 30px 0;
   display: flex;
@@ -7,8 +9,8 @@
 .item {
   font-size: 12px;
   font-weight: 500;
-  color: #fff;
-  background-color: #fd2d55;
+  color: color-white;
+  background-color: color-primary;
   border-radius: 5px;
   width: 30px;
   height: 30px;
@@ -16,9 +18,9 @@
   text-align: center;
   padding: 0;
   margin: 0 5px;
-  box-shadow: 0 1px 4px 0 #fd2d55;
+  box-shadow: 0 1px 4px 0 color-primary;
 }
 .item.active {
-  background-color: #2e2c5b;
-  box-shadow: 0 1px 4px 0 #2e2c5b;
+  background-color: color-secendry;
+  box-shadow: 0 1px 4px 0 color-secendry;
 }

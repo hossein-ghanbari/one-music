@@ -1,3 +1,5 @@
+@value color-darkMode from "../../utility/colors.css";
+
 main {
   padding: 80px 0 85px 250px;
   transition: all 0.3s;
@@ -17,7 +19,7 @@ main {
 
 /* dark mode */
 main:global(.dark) {
-  background-color: #1f1f1f;
+  background-color: color-darkMode;
 }
 main:global(.dark) div,
 main:global(.dark) a {

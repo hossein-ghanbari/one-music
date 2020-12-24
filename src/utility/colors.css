@@ -1,0 +1,16 @@
+@value color-primary: #fd2d55;
+@value color-primaryLighten: #fd2d5508;
+@value color-secendry: #2e2c5b;
+@value color-white: #fff;
+@value color-black: #000;
+@value color-blackLighten: #00000080;
+@value color-darkMode: #1f1f1f;
+@value color-light: #e3e3e3;
+@value color-lightLighten: #f6f6f6;
+@value color-dark: #484848;
+@value color-darkLighten: #8f8ea9;
+
+@value color-navShadow: #00000026;
+
+/* for import to another css file */
+/* @value color-white,color-light from "../../utility/colors.css"; */

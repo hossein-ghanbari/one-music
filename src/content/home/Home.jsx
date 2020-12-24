@@ -3,10 +3,11 @@ import List from "../../component/list/List";
 import MusicItem from "../../component/musicItem/MusicItem";
 import Title from "../../component/title/Title";
 
-import SwiperCore, { EffectCoverflow } from "swiper";
+import SwiperCore, { EffectCoverflow, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 SwiperCore.use([EffectCoverflow]);
+SwiperCore.use([Autoplay]);
 
 const Home = ({ allArtists, allMusics }) => {
   return (
@@ -20,15 +21,19 @@ const Home = ({ allArtists, allMusics }) => {
           slidesPerView={1.4}
           centeredSlides={true}
           coverflowEffect={{
-            rotate: 5,
+            rotate: 25,
             stretch: 0,
             depth: 250,
             modifier: 1,
             slideShadows: false,
           }}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             992: {
-              spaceBetween: 50,
+              spaceBetween: 40,
               slidesPerView: 3,
             },
           }}

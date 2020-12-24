@@ -9,6 +9,7 @@ import ThemeProvider from "./context/ThemeContext";
 import Template from "./component/template/Template";
 import Loading from "./component/loading/Loading";
 import routes from "./routes/routes";
+import ScrollToTop from "./utility/ScrollToTop";
 
 function App() {
   const queryClient = new QueryClient();
@@ -17,6 +18,7 @@ function App() {
     <ThemeProvider>
       <PlayerProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <QueryClientProvider client={queryClient}>
             <Template>
               <Suspense fallback={<Loading />}>

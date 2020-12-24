@@ -1,3 +1,5 @@
+@value color-white,color-light,color-dark,color-darkLighten,color-blackLighten from "../../utility/colors.css";
+
 .col {
   flex: 0 0 16.666667%;
   width: 16.666667%;
@@ -13,8 +15,8 @@
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #e3e3e3;
-  box-shadow: 0 1px 4px 0 #00000077;
+  background-color: color-light;
+  box-shadow: 0 1px 4px 0 color-blackLighten;
 }
 .cover {
   position: absolute;
@@ -32,7 +34,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: #00000080;
+  background-color: color-blackLighten;
   background: radial-gradient(circle, #00000050 0%, #000000bb 100%);
   display: flex;
   align-items: center;
@@ -45,12 +47,12 @@
 }
 .itemHover i {
   font-size: 50px;
-  color: #fff;
+  color: color-white;
 }
 .musicName {
   font-size: 13px;
   font-weight: 600;
-  color: #484848;
+  color: color-dark;
   margin: 8px 0 4px 0;
   height: 16px;
   overflow: hidden;
@@ -61,7 +63,7 @@
 .artistName {
   font-size: 11px;
   font-weight: 500;
-  color: #8f8ea9;
+  color: color-darkLighten;
   margin: 0;
   height: 13px;
   overflow: hidden;
@@ -84,5 +86,5 @@
 
 /* dark mode */
 :global(.dark) .musicName {
-  color: #fff;
+  color: color-white;
 }
