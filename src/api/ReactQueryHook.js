@@ -9,12 +9,8 @@ const useAllArtists = (page) => {
   return useQuery(["allArtists", page], api.getAllArtists);
 };
 
-const useArtist = (id) => {
-  return useQuery(["artist", id], api.getArtist);
-};
-
 const useArtistMusics = (id) => {
   return useQuery(["artistMusics", id], api.getArtistMusics);
 };
 
-export { useAllMusics, useAllArtists, useArtist, useArtistMusics };
+export { useAllMusics, useAllArtists, useArtistMusics };

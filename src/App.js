@@ -7,6 +7,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import PlayerProvider from "./context/PlayerContext";
 import ThemeProvider from "./context/ThemeContext";
 import Template from "./component/template/Template";
+import Loading from "./component/loading/Loading";
 import routes from "./routes/routes";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
         <BrowserRouter>
           <QueryClientProvider client={queryClient}>
             <Template>
-              <Suspense fallback={<div>loading</div>}>
+              <Suspense fallback={<Loading />}>
                 <Switch>
                   {routes.map((route, i) => (
                     <Route key={i} {...route} />

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { urls } from "../utility/config";
+
 axios.defaults.baseURL = urls.baseUrl;
 
 const getAllMusics = async ({ queryKey }) => {
@@ -14,16 +15,10 @@ const getAllArtists = async ({ queryKey }) => {
   return data;
 };
 
-const getArtist = async ({ queryKey }) => {
-  const id = queryKey[1];
-  const { data } = await axios.get(`/artists/${id}`);
-  return data;
-};
-
 const getArtistMusics = async ({ queryKey }) => {
   const id = queryKey[1];
   const { data } = await axios.get(`/artists/${id}/musics`);
   return data;
 };
 
-export { getAllMusics, getAllArtists, getArtist, getArtistMusics };
+export { getAllMusics, getAllArtists, getArtistMusics };
