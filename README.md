@@ -1,11 +1,11 @@
-# Music site with react and react-query and react-player
+## Music site with react and react-query and react-player
 
-## Demo - Click on the image to view the demo
+### Demo - Click on the image to view the demo
 <a href="https://onemusic.hosseinghanbari.ir/">
  <img alt="onemusic"  title="onemusic" src="https://onemusic.hosseinghanbari.ir/static/media/logoType.c81258fe.svg" height="50em" />
 </a>
 
-##
+###
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### Available Scripts
