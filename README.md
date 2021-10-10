@@ -1,4 +1,4 @@
-# music site with react and react-query and react-player
+# Music site with react and react-query and react-player
 
 ## Demo
 https://onemusic.hosseinghanbari.ir/
